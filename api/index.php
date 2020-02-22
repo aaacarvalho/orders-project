@@ -17,7 +17,7 @@
     */
 
     $router->get('/snacks', 'SnackController:getSnacks');
-    $router->get('/snacks/categories', 'SnackController:getCategories');
+    $router->get('/snacks/categories', 'SnackCategoryController:getCategories');
 
     /*
 
