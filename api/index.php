@@ -25,6 +25,19 @@
 
     $router->get('/cities', 'CityController:getCities');
 
+    /*
+        Neighborhoods
+    */
+
+    $router->get('/neighborhoods', 'NeighborhoodController:getNeighborhoods');
+
+    /*
+        Buffets
+    */
+
+    $router->get('/buffets', 'BuffetController:getBuffets');
+    $router->get('/buffets/categories', 'BuffetCategoryController:getCategories');
+
     /* 
         Dispatch
     */
