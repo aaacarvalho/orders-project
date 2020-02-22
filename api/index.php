@@ -20,8 +20,10 @@
     $router->get('/snacks/categories', 'SnackCategoryController:getCategories');
 
     /*
-
+        Cities
     */
+
+    $router->get('/cities', 'CityController:getCities');
 
     /* 
         Dispatch

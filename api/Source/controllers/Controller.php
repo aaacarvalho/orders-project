@@ -15,7 +15,7 @@
         {
         	http_response_code($statusCode);
 			echo '<pre>'; 
-			echo json_encode($data);
+			echo json_encode($data, JSON_PRETTY_PRINT);
        	}
 
        	public static function isSuccessful(object $object): array
