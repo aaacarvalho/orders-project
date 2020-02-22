@@ -12,6 +12,17 @@
 
     $router->namespace('Source\controllers');
 
+    /*
+        Snacks
+    */
+
+    $router->get('/snacks', 'SnackController:getSnacks');
+    $router->get('/snacks/categories', 'SnackController:getCategories');
+
+    /*
+
+    */
+
     /* 
         Dispatch
     */

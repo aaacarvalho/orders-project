@@ -12,7 +12,7 @@
         "driver" => "mysql",
         "host" => "localhost",
         "port" => "3306",
-        "dbname" => "school",
+        "dbname" => "orders_project",
         "username" => "root",
         "passwd" => "",
         "options" => [
