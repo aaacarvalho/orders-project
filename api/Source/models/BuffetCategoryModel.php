@@ -4,25 +4,25 @@
     use CoffeeCode\DataLayer\Connect;
     use CoffeeCode\DataLayer\DataLayer;
 
-    class BuffetModel extends DataLayer
+    class BuffetCategoryModel extends DataLayer
     {
         private $connection;
 
         public function __construct()
         {
             $this->connection = Connect::getInstance();
-            parent::__construct('buffets', ['name', 'category_id']);
+            parent::__construct('buffets_categories', ['name']);
         }
 
-        public function getBuffets(): array
+        public function getCategories(): array
         {
             try {
-                $query = "SELECT id, name, category_id FROM buffets";
+                $query = "SELECT id, name FROM buffets_categories";
                 $stmt = $this->connection->prepare($query);
                 $stmt->execute();
 
-                $buffets = $stmt->fetchAll();
-                return $buffets;
+                $categories = $stmt->fetchAll();
+                return $categories;
             } catch (PDOException $e) {
                 return ["message" => $e];
             }
