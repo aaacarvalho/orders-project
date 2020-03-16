@@ -17,7 +17,7 @@
         public function getNeighborhoods(): array
         {
             try {
-                $query = "SELECT id, name FROM neighborhoods";
+                $query = "SELECT id, name, city_id, price FROM neighborhoods";
                 $stmt = $this->connection->prepare($query);
                 $stmt->execute();
 

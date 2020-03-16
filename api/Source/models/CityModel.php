@@ -17,7 +17,7 @@
         public function getCities(): array
         {
             try {
-                $query = "SELECT id, name FROM cities";
+                $query = "SELECT id, name, email FROM cities";
                 $stmt = $this->connection->prepare($query);
                 $stmt->execute();
 

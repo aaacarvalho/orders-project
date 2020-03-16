@@ -15,6 +15,10 @@ class ComposerStaticInit9ba86651fa563e3899355b861585bd9b
         array (
             'Source\\' => 7,
         ),
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
         'C' => 
         array (
             'CoffeeCode\\Router\\' => 18,
@@ -26,6 +30,10 @@ class ComposerStaticInit9ba86651fa563e3899355b861585bd9b
         'Source\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Source',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'CoffeeCode\\Router\\' => 
         array (

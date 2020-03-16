@@ -17,7 +17,7 @@
         public function getAll(): array
         {
             try {
-                $query = 'SELECT name, category_id, price FROM snacks';
+                $query = 'SELECT id, name, category_id, price, minimum FROM snacks';
                 $stmt = $this->connection->prepare($query);
                 $stmt->execute();
 

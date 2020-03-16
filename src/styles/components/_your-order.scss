@@ -1,0 +1,57 @@
+.your-order{
+    max-width: 100%;
+    width: 100%;
+    overflow-x: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    h3{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0px;
+        font-size: 24px;
+    }    
+
+    img{
+        justify-self: center;
+        align-self: center;
+    }
+
+    .success,
+    .error,
+    .warning{
+        color: $text-color;
+        padding: 10px 40px;
+        max-width: 90%;
+        width: auto;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .success{
+        background-color: $success-color;
+    }
+
+    .error{
+        background-color: $error-color;
+    }
+
+    .warning{
+        background-color: $warning-color;
+    }
+
+    .order-list{
+        flex: none;
+    }
+}
+
+@media only screen and (min-width: $tablet) {
+    .your-order{
+        .success{
+            max-width: 65%;
+        }
+    }
+}

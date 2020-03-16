@@ -1,10 +1,14 @@
 <?php
 
-    /* Global settings */
+    /* 
+        Global settings
+    */
 
     define("ROOT", "http://localhost:8080/orders/api");
 
-    /* Helpers */
+    /* 
+        Helpers 
+    */
 
     date_default_timezone_set("America/Sao_Paulo");
 
@@ -21,4 +25,19 @@
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
             PDO::ATTR_CASE => PDO::CASE_NATURAL
         ]
+    ]);
+
+    /*
+        Email settings
+    */
+
+    define ("MAIL", [
+        "host" => "ns62.prodns.com.br",
+        "SMTPAuth" => true,
+        "SMTPSecure" => "ssl",
+        "user" => "contato@globalnetsis.com.br",
+        "passwd" => "GNSc10@!",
+        "port" => 465,
+        "fromMail" => "contato@globalnetsis.com.br",
+        "fromName" => "Globalnetsis"
     ]);

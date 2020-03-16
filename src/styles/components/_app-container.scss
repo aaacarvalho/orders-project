@@ -1,0 +1,22 @@
+.app-container{
+    width: 90vw;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: $tablet) {
+    .app-container {
+        width: 90vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .app-container {
+        width: 75vw;
+        max-width: 1140px;
+    }
+}

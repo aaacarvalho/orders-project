@@ -14,8 +14,7 @@
 		public static function send(int $statusCode, $data): void
         {
         	http_response_code($statusCode);
-			echo '<pre>'; 
-			echo json_encode($data, JSON_PRETTY_PRINT);
+			echo json_encode($data);
        	}
 
        	public static function isSuccessful(object $object): array

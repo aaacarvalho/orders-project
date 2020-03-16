@@ -1,6 +1,6 @@
 <?php
 
-    namespace Source\Controllers;
+    namespace Source\controllers;
     use Source\controllers\Controller;
     use Source\models\BuffetCategoryModel;
 

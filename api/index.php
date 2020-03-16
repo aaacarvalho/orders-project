@@ -38,6 +38,12 @@
     $router->get('/buffets', 'BuffetController:getBuffets');
     $router->get('/buffets/categories', 'BuffetCategoryController:getCategories');
 
+    /*
+        Order
+    */
+
+    $router->post('/orders', 'EmailController:sendEmail');
+
     /* 
         Dispatch
     */

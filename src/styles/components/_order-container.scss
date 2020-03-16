@@ -1,0 +1,19 @@
+.order-container{
+    flex: 0 0 100%;
+    width: 100%;
+    border-bottom: $border-input;
+    
+    h3{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0px;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: $tablet) {
+    .order-container{
+        flex: 0 0 45%;
+        border-bottom: none;
+    }
+}
